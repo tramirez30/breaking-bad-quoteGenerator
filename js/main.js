@@ -72,15 +72,15 @@ let resetCards = () => {
 
 let quote = () => {
   resetCards();
-  fetch(`https://api.breakingbadquotes.xyz/v1/quotes/`)
+  fetch(`https://api.breakingbadquotes.xyz/v1/quotes/3`)
     .then((res) => res.json())
     .then((data) => {
       console.table(data);
-
+      let output = "";
       data.forEach((item) => {
         const cards = document.querySelectorAll(".card");
         cards.forEach((card) => card.remove());
-        let output = `
+        output += `
             <div class="card">
                 <div class="card-content">
                     <p class="title is-4 mb-4">${item.quote}</p>
