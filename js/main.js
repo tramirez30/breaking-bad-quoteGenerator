@@ -76,10 +76,12 @@ let quote = () => {
     .then((res) => res.json())
     .then((data) => {
       console.table(data);
+      // Clears existing cards, and returns new data
       let output = "";
       data.forEach((item) => {
         const cards = document.querySelectorAll(".card");
         cards.forEach((card) => card.remove());
+        // Appends quotes + author to card
         output += `
             <div class="card">
                 <div class="card-content">
