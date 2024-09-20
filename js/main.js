@@ -123,34 +123,3 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 
 */
 
-// Code War Problem
-
-// function order(words) {
-//   let gatheredWords = words.split(" ");
-//   gatheredWords.forEach((word) => {
-//     let smallWord = word.split("");
-//     // ['is2', 'Thi1s', 'T4est' '3a']
-//     const sortedArray = smallWord.reduce((acc, curr) => {
-//       if (Number(curr) !== NaN) {
-//         let position = curr;
-//         console.log("Position", position);
-//       } else {
-//         let arr = [];
-//         arr.push(curr);
-//         console.log("Array:", arr);
-//       }
-//     }, []);
-//     console.log("Result:", sortedArray);
-//   });
-// }
-
-// Codewar Problem Exercies (6kyu)
-
-// function order(words) {
-//   let numericalSearch = /[0-9]/g;
-//   // let newArr = words.match(numericalSearch).sort();
-
-//   console.log(words.split(" "));
-// }
-
-// order("is2 Thi1s T4est 3a");
