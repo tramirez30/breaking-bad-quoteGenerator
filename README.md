@@ -31,7 +31,7 @@ _This project is a work in progress._
 ### Project Structure
 
 ```bash
-Project-Name/
+Breaking-Bad/
 │
 ├── index.html            # Main HTML file
 ├── css
