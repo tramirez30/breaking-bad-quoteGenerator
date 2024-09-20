@@ -18,13 +18,13 @@ Brief project description.
 
 ### Status
 
-_Project is in [In Progress] (e.g. in progress, complete)._
+_This project is a work in progress._
 
 ### Tech Stack
 
-- **HTML**: Describe usage.
-- **CSS**: Describe styling framework or approach.
-- **JavaScript/Frameworks**: Describe JavaScript usage or frameworks.
+- **_HTML_**: Structure of the webpage.
+- **_JavaScript_**: Fetching API data, handling DOM manipulation.
+- **_Bulma/CSS_**: Styling the webpage.
 
 ### How to Run
 
