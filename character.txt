@@ -27,3 +27,4 @@
 - Tio Salamanca
 
 
+/// List of charactes from API, fix so you can group into an array, and you can select them
