@@ -72,7 +72,7 @@ let resetCards = () => {
 
 let quote = () => {
   resetCards();
-  fetch(`https://api.breakingbadquotes.xyz/v1/quotes/3`)
+  fetch("https://api.breakingbadquotes.xyz/v1/quotes/3")
     .then((res) => res.json())
     .then((data) => {
       console.table(data);
@@ -107,8 +107,7 @@ let clearQuote = () => {
 // Event Listener, runs Quote() after click
 document.querySelector("#getQuote-btn").addEventListener("click", quote);
 
-// Clear quote
-
+// Clears quote
 document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 
 // If there is no value in the input field, don't display card
@@ -123,3 +122,18 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 
 */
 
+// Storing data from API call into an array
+
+const words = [];
+let listOfWords = () => {
+  fetch("https://api.breakingbadquotes.xyz/v1/quotes/20")
+    .then((response) => response.json())
+    .then(function (result) {
+      console.log("Result", result);
+      for (var i = 0; i < result.length; i++) {
+        words.push(result[i]);
+      }
+      console.log("Words", words);
+    })
+    .catch((error) => console.log("error", error));
+};
