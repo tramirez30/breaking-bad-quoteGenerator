@@ -140,3 +140,6 @@ let listOfWords = () => {
 };
 
 listOfWords();
+
+// Looping through API
+// Refer to doc: https://www.sitepoint.com/loop-through-json-response-javascript/
