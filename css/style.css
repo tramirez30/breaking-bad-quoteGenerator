@@ -5,20 +5,12 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-img {
-  display: block;
-  margin: 0 auto;
+/* Dropdown Scrollable */
+.dropdown-content {
+  max-height: 10em;
+  overflow: auto;
 }
-
-.card-is-hidden {
-  display: none;
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
