@@ -128,12 +128,13 @@ const words = [];
 let listOfWords = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/20")
     .then((response) => response.json())
-    .then(function (result) {
-      console.log("Result", result);
-      for (var i = 0; i < result.length; i++) {
-        words.push(result[i].author);
+    .then((data) => {
+      for (var i = 0; i < data.length; i++) {
+        let character = data[i].author;
+        const list = new Array(character);
+        console.log(list);
       }
-      console.log("Words", words);
+      // console.log("Words", words);
     })
     .catch((error) => console.log("error", error));
 };
