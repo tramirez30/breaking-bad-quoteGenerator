@@ -131,9 +131,11 @@ let listOfWords = () => {
     .then(function (result) {
       console.log("Result", result);
       for (var i = 0; i < result.length; i++) {
-        words.push(result[i]);
+        words.push(result[i].author);
       }
       console.log("Words", words);
     })
     .catch((error) => console.log("error", error));
 };
+
+listOfWords();
