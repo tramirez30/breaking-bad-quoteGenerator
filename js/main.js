@@ -125,21 +125,18 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 // Storing data from API call into an array
 
 const words = [];
-let listOfWords = () => {
+let inputOptions = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/20")
     .then((response) => response.json())
     .then((data) => {
-      for (var i = 0; i < data.length; i++) {
-        let character = data[i].author;
-        const list = new Array(character);
-        console.log(list);
+      for (let item of data) {
+        console.log("Author -", item.author);
       }
-      // console.log("Words", words);
     })
     .catch((error) => console.log("error", error));
 };
 
-listOfWords();
+inputOptions();
 
 // Looping through API
 // Refer to doc: https://www.sitepoint.com/loop-through-json-response-javascript/
