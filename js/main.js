@@ -65,13 +65,7 @@
 // Fetches Author + Quote
 // returns html + string template
 
-let resetCards = () => {
-  const cards = document.querySelectorAll(".card");
-  cards.forEach((card) => card.remove());
-};
-
 let quote = () => {
-  resetCards();
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/3")
     .then((res) => res.json())
     .then((data) => {
