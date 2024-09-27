@@ -118,6 +118,11 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 
 // Storing data from API call into an array
 
+// Create function that grabs the author's name
+// Add author's name to the drodown options
+// Add dropdown functionality (hide/expand)
+// Add filter functionality that will display a tag and only show quotes of that author
+
 const words = [];
 let inputOptions = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/50")
