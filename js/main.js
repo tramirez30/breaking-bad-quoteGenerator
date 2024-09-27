@@ -126,12 +126,15 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 
 const words = [];
 let inputOptions = () => {
-  fetch("https://api.breakingbadquotes.xyz/v1/quotes/20")
+  fetch("https://api.breakingbadquotes.xyz/v1/quotes/50")
     .then((response) => response.json())
     .then((data) => {
       for (let item of data) {
-        console.log("Author -", item.author);
+        if (!words.includes(item.author)) {
+          words.push(item.author);
+        }
       }
+      console.log("Words:", words);
     })
     .catch((error) => console.log("error", error));
 };
