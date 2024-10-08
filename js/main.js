@@ -118,12 +118,12 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 // Storing data from API call into an array
 
 // Create function that grabs the author's name
-// Add author's name to the drodown options
+// Add author's name to the dropdown options
 // Add dropdown functionality (hide/expand)
 // Add filter functionality that will display a tag and only show quotes of that author
 // The tags will display an "X" where I can remove filter
 
-const words = [];
+let words = [];
 
 let getAuthor = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/50")
@@ -140,7 +140,9 @@ let getAuthor = () => {
 };
 
 let selectAuthor = (arr) => {
-  console.log("Array:", arr[2]);
+  for (let char of arr) {
+    console.log("Characters", char);
+  }
 };
 
 /* Insert into dom instead of hardcoding them into HTML (Make it dynamic)
