@@ -14,3 +14,7 @@
   max-height: 10em;
   overflow: auto;
 }
+/* Hides dropdown when nothing is selected */
+.dropdown-hidden {
+  display: none;
+}
