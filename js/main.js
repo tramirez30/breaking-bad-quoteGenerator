@@ -125,7 +125,7 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 // The tags will display an "X" where I can remove filter
 
 const words = [];
-let inputOptions = () => {
+let getAuthor = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/50")
     .then((response) => response.json())
     .then((data) => {
@@ -158,7 +158,7 @@ let inputOptions = () => {
 
 */
 
-inputOptions();
+getAuthor();
 
 // Looping through API
 // Refer to doc: https://www.sitepoint.com/loop-through-json-response-javascript/
