@@ -123,26 +123,24 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 // Add filter functionality that will display a tag and only show quotes of that author
 // The tags will display an "X" where I can remove filter
 
-let words = [];
+let characters = [];
 
 let getAuthor = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/50")
     .then((response) => response.json())
     .then((data) => {
       for (let item of data) {
-        if (!words.includes(item.author)) {
-          words.push(item.author);
+        if (!characters.includes(item.author)) {
+          characters.push(item.author);
         }
       }
-      console.log("Words:", words);
+      console.log("Characters:", characters);
     })
     .catch((error) => console.log("error", error));
 };
 
 let selectAuthor = (arr) => {
-  for (let char of arr) {
-    console.log("Characters", char);
-  }
+  console.log("Characters", arr[1]);
 };
 
 /* Insert into dom instead of hardcoding them into HTML (Make it dynamic)
@@ -165,7 +163,7 @@ let selectAuthor = (arr) => {
 */
 
 getAuthor();
-selectAuthor(words);
+selectAuthor(characters);
 
 // Looping through API
 // Refer to doc: https://www.sitepoint.com/loop-through-json-response-javascript/
