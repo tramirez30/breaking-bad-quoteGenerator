@@ -134,6 +134,9 @@ let getAuthor = () => {
         }
       }
       console.log("Words:", words);
+      return `
+        <a class="dropdown-item"> ${words[0]} </a>
+        `;
     })
     .catch((error) => console.log("error", error));
 };
