@@ -124,6 +124,7 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 // The tags will display an "X" where I can remove filter
 
 const words = [];
+
 let getAuthor = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/50")
     .then((response) => response.json())
@@ -134,11 +135,12 @@ let getAuthor = () => {
         }
       }
       console.log("Words:", words);
-      return `
-        <a class="dropdown-item"> ${words[0]} </a>
-        `;
     })
     .catch((error) => console.log("error", error));
+};
+
+let selectAuthor = (arr) => {
+  console.log("Array:", arr[2]);
 };
 
 /* Insert into dom instead of hardcoding them into HTML (Make it dynamic)
@@ -161,6 +163,7 @@ let getAuthor = () => {
 */
 
 getAuthor();
+selectAuthor(words);
 
 // Looping through API
 // Refer to doc: https://www.sitepoint.com/loop-through-json-response-javascript/
