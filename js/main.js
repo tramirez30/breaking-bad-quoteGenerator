@@ -69,7 +69,6 @@ let quote = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/3")
     .then((res) => res.json())
     .then((data) => {
-      console.table(data);
       // Clears existing cards, and returns new data
       let output = "";
       data.forEach((item) => {
