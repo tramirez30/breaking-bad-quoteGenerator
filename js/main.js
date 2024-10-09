@@ -141,7 +141,10 @@ let getAuthor = () => {
 };
 
 let selectAuthor = (arr) => {
-  console.log("Author is:", arr[1]);
+  for (let author of arr) {
+    let dropdownEl = document.querySelector("#author-content");
+    dropdownEl.append(author);
+  }
 };
 
 /* Insert into dom instead of hardcoding them into HTML (Make it dynamic)
