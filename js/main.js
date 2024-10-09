@@ -74,7 +74,7 @@ let quote = () => {
       data.forEach((item) => {
         const cards = document.querySelectorAll(".card");
         cards.forEach((card) => card.remove());
-        // Appends quotes + author to card
+        // Appends quotes + author to card using string literal
         output += `
             <div class="card">
                 <div class="card-content">
@@ -126,24 +126,31 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 let characters = [];
 
 let getAuthor = () => {
-  fetch("https://api.breakingbadquotes.xyz/v1/quotes/50")
+  fetch("https://api.breakingbadquotes.xyz/v1/quotes/100")
     .then((response) => response.json())
     .then((data) => {
       for (let item of data) {
+        // If character is not in array then push author to characters array
         if (!characters.includes(item.author)) {
           characters.push(item.author);
         }
       }
-
+      // Calls selectAuthor and stores author name into dropdown
       selectAuthor(characters);
     })
     .catch((error) => console.log("error", error));
 };
 
+// Stores author's name into dropdown
 let selectAuthor = (arr) => {
   for (let author of arr) {
+    let authorContent = "";
+    // Grabbing author-content where author's name will be added to dropdown
     let dropdownEl = document.querySelector("#author-content");
-    dropdownEl.append(author);
+    authorContent += `
+      <a class="dropdown-item"> ${author}</a>
+      `;
+    dropdownEl.innerHTML += authorContent;
   }
 };
 
