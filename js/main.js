@@ -134,13 +134,14 @@ let getAuthor = () => {
           characters.push(item.author);
         }
       }
-      console.log("Characters:", characters);
+
+      selectAuthor(characters);
     })
     .catch((error) => console.log("error", error));
 };
 
 let selectAuthor = (arr) => {
-  console.log("Characters", arr[1]);
+  console.log("Author is:", arr[1]);
 };
 
 /* Insert into dom instead of hardcoding them into HTML (Make it dynamic)
@@ -163,7 +164,6 @@ let selectAuthor = (arr) => {
 */
 
 getAuthor();
-selectAuthor(characters);
 
 // Looping through API
 // Refer to doc: https://www.sitepoint.com/loop-through-json-response-javascript/
