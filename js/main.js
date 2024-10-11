@@ -147,6 +147,7 @@ let selectAuthor = (arr) => {
     let authorContent = "";
     // Grabbing author-content where author's name will be added to dropdown
     let dropdownEl = document.querySelector("#author-content");
+    // Appends css to dropdown
     authorContent += `
       <a class="dropdown-item"> ${author}</a>
       `;
