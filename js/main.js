@@ -151,6 +151,7 @@ let selectAuthor = (arr) => {
     authorContent += `
       <a class="dropdown-item"> ${author}</a>
       `;
+    // Appends list of authors to id selector
     dropdownEl.innerHTML += authorContent;
   }
 };
