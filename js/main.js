@@ -156,25 +156,6 @@ let selectAuthor = (arr) => {
   }
 };
 
-/* Insert into dom instead of hardcoding them into HTML (Make it dynamic)
-
-<a class="dropdown-item"> Walter White </a>
-<a class="dropdown-item"> Skylar White </a>
-<a class="dropdown-item"> Hank Schrader </a>
-<a class="dropdown-item"> Gustavo Fring </a>
-<a class="dropdown-item"> Jesse Pinkman </a>
-<a class="dropdown-item"> Saul Goodman </a>
-<a class="dropdown-item"> Mike Ehrmantraut </a>
-<a class="dropdown-item"> Badger </a>
-<a class="dropdown-item"> Stephen King </a>
-<a class="dropdown-item"> The fly </a>
-<a class="dropdown-item"> Tuco Salamanca </a>
-<a class="dropdown-item"> Marie Schrader </a>
-<a class="dropdown-item"> Gale Boetticher </a>
-<a class="dropdown-item"> Tio Salamanca </a>
-
-*/
-
 getAuthor();
 
 // Looping through API
