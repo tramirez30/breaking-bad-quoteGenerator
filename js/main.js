@@ -158,4 +158,3 @@ let selectAuthor = (arr) => {
 
 getAuthor();
 
-// Refer to doc: https://www.sitepoint.com/loop-through-json-response-javascript/
