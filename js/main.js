@@ -160,3 +160,6 @@ getAuthor();
 
 // Unrelated: Promise Exercise Article:
 // https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html
+
+// Reading Assignment
+// https://thenewtoys.dev/blog/2021/02/08/lets-talk-about-how-to-talk-about-promises/
