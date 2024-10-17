@@ -160,3 +160,6 @@ getAuthor();
 
 // Unrelated: Promise Exercise Article:(TODO)
 // https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html
+
+// Reading assignment:
+// https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
