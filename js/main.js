@@ -158,7 +158,7 @@ let selectAuthor = (arr) => {
 
 getAuthor();
 
-// Unrelated: Promise Exercise Article:(TODO)
+// Unrelated: Promise Exercise Article:(TODO) IN PROGRESS
 // https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html
 
 // Reading assignment:
