@@ -121,7 +121,7 @@ document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 // Add author's name to the dropdown options
 // Add dropdown functionality (hide/expand)
 // Add filter functionality that will display a tag and only show quotes of that author
-// The tags will display an "X" where I can remove filter
+// The tags will display an "X" where user can remove filter
 
 let characters = [];
 
