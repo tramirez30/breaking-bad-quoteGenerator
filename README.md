@@ -35,8 +35,6 @@ Breaking-Bad/
 │
 ├── index.html            # Main HTML file
 ├── css
-  ├── normalize.css
-  ├── reset.css
   ├── style.css           # CSS file(s)
 ├── js                    # JavaScript file(s)
   ├── main.js                        # Images or other media
