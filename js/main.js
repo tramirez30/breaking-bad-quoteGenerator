@@ -100,7 +100,8 @@ let clearQuote = () => {
 // Toggle dropdown state
 
 let isActive = () => {
-  console.log("click");
+  let el = document.querySelector(".dropdown");
+  console.log(el.className);
 };
 
 // Event Listener, runs Quote() after click
