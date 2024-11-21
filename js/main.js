@@ -98,11 +98,12 @@ let clearQuote = () => {
 };
 
 // Toggle dropdown state
+// TODO: ABC's dropdown
 
-// let isActive = () => {
-//   let el = document.querySelector(".dropdown");
-//   el.classList.toggle("is-active");
-// };
+let isActive = () => {
+  let el = document.querySelector(".dropdown");
+  el.classList.toggle("is-active");
+};
 
 // Event Listener, runs Quote() after click
 document.querySelector("#getQuote-btn").addEventListener("click", quote);
@@ -111,7 +112,7 @@ document.querySelector("#getQuote-btn").addEventListener("click", quote);
 document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 
 // Toggle dropdown state
-// document.querySelector("#dropdown").addEventListener("click", isActive);
+document.querySelector("#dropdown").addEventListener("click", isActive);
 
 // If there is no value in the input field, don't display card
 
