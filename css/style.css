@@ -2,6 +2,7 @@
 .dropdown-content {
   max-height: 10em;
   overflow: auto;
+  width: 155px;
 }
 /* Hides dropdown when nothing is selected */
 .dropdown-hidden {
