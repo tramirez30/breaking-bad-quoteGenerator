@@ -101,7 +101,7 @@ let clearQuote = () => {
 
 let isActive = () => {
   let el = document.querySelector(".dropdown");
-  console.log(el.className);
+  el.classList.toggle("is-active");
 };
 
 // Event Listener, runs Quote() after click
