@@ -99,10 +99,10 @@ let clearQuote = () => {
 
 // Toggle dropdown state
 
-let isActive = () => {
-  let el = document.querySelector(".dropdown");
-  el.classList.toggle("is-active");
-};
+// let isActive = () => {
+//   let el = document.querySelector(".dropdown");
+//   el.classList.toggle("is-active");
+// };
 
 // Event Listener, runs Quote() after click
 document.querySelector("#getQuote-btn").addEventListener("click", quote);
@@ -173,6 +173,3 @@ getAuthor();
 
 // Reading assignment:
 // https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
-
-// Resume NODE.JS Brad Traversy video
-// 50-55min
