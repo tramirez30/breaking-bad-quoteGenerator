@@ -99,8 +99,8 @@ let clearQuote = () => {
 
 // Toggle dropdown state
 // TODO:
-// List dropdown in Alphabet order
-// Flip arrow when dropdown is active
+// List dropdown in Alphabet order(11/20)
+// Flip arrow when dropdown is active(11/20)
 
 let isActive = () => {
   let el = document.querySelector(".dropdown");
