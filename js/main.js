@@ -101,6 +101,7 @@ let clearQuote = () => {
 // TODO:
 // List dropdown in Alphabet order(11/20)
 // Flip arrow when dropdown is active(11/20)
+// Filter
 
 let isActive = () => {
   let el = document.querySelector(".dropdown");
