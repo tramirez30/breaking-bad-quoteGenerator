@@ -107,6 +107,7 @@ let clearQuote = () => {
 let isActive = () => {
   let el = document.querySelector(".dropdown");
   // Logic will go here (Check if dropdown was clicked or not)
+  console.dir(el);
   el.classList.toggle("is-active");
 };
 
