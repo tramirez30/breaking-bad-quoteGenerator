@@ -110,7 +110,9 @@ let isActive = (e) => {
   let dropDownMenu = document.querySelector(".dropdown-menu");
 
   // Logic will go here (Check if dropdown was clicked or not)
+
   console.log(dropDownInput.contains(e.target));
+
   dropDownInput.classList.toggle("is-active");
 };
 
