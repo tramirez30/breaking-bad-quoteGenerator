@@ -110,11 +110,13 @@ let isActive = (e) => {
   let dropDownMenu = document.querySelector(".dropdown-menu");
 
   // Logic will go here (Check if dropdown was clicked or not)
-
+  if (dropDownInput.contains(e.target)) {
+    dropDownInput.classList.toggle("is-active");
+  } else if (!dropDownMenu.contains(e.target)) {
+    classList.toggle("dropdown-hidden");
+  }
   console.log(dropDownInput.contains(e.target));
   console.log(dropDownMenu.contains(e.target));
-
-  dropDownInput.classList.toggle("is-active");
 };
 
 // Event Listener, runs Quote() after click
