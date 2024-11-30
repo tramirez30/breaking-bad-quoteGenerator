@@ -8,3 +8,7 @@
 .dropdown-hidden {
   display: none;
 }
+
+.dropdown-menu {
+  width: 155px !important;
+}
