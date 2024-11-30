@@ -104,10 +104,10 @@ let clearQuote = () => {
 // Function - Close dropdown if user clicks anywhere on the screen
 // Function - Click on name and display tag with value
 
-let isActive = () => {
+let isActive = (e) => {
   let el = document.querySelector(".dropdown");
   // Logic will go here (Check if dropdown was clicked or not)
-  console.dir(el);
+  console.log(el.contains(e.target));
   el.classList.toggle("is-active");
 };
 
