@@ -9,6 +9,6 @@
   display: none;
 }
 
-.dropdown-menu {
-  width: 155px !important;
+div#dropdown-menu3.dropdown-menu {
+  min-width: 155px;
 }
