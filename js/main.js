@@ -108,12 +108,15 @@ let isActive = (e) => {
   // Targeting Dropdown Input Field + Dropdown Menu
   let dropDownInput = document.querySelector(".dropdown");
   let dropDownMenu = document.querySelector(".dropdown-menu");
-
+  if (!dropDownInput.contains(e.target) || !dropDownMenu.contains(e.target)) {
+    dropDownInput.classList.toggle("is-active");
+  } else {
+    dropDownInput.classList.toggle("is-active");
+  }
   // Logic will go here (Check if dropdown was clicked or not)
   console.log("Target is:", e.target);
   console.log(dropDownInput.contains(e.target));
   console.log(dropDownMenu.contains(e.target));
-  dropDownInput.classList.toggle("is-active");
 };
 
 // Event Listener, runs Quote() after click
