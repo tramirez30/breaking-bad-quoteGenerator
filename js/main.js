@@ -111,7 +111,7 @@ let isActive = (e) => {
   if (!dropDownInput.contains(e.target) || !dropDownMenu.contains(e.target)) {
     dropDownInput.classList.toggle("is-active");
   } else {
-    dropDownInput.classList.toggle("is-active");
+    dropDownInput.classList.toggle(".dropdown-hidden");
   }
   // Logic will go here (Check if dropdown was clicked or not)
   console.log("Target is:", e.target);
