@@ -114,7 +114,7 @@ let isActive = (e) => {
     dropDownInput.classList.toggle(".dropdown-hidden");
   }
   // Logic will go here (Check if dropdown was clicked or not)
-  // 12/02/2024 Sick 🤒
+
   console.log("Target is:", e.target);
   console.log(e.target.contains(dropDownInput));
   console.log(e.target.contains(dropDownMenu));
