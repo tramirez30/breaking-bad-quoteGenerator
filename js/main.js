@@ -108,10 +108,14 @@ let isActive = (e) => {
   // Targeting Dropdown Input Field + Dropdown Menu
   let dropDownInput = document.querySelector(".dropdown");
   let dropDownItem = document.querySelector(".dropdown-item");
-  if (!e.target.contains(dropDownItem)) {
+  if (!e.target.contains(dropDownInput)) {
+    dropDownInput.classList.toggle("is-active");
+  }
+  // If you click outside the dropdown component, the dropdown will close
+
+  if (!dropDownInput.contains(e.target)) {
     dropDownInput.classList.remove("is-active");
   }
-  // Logic will go here (Check if dropdown was clicked or not)
 
   console.log("Target is:", e.target);
   console.log(e.target.contains(dropDownInput));
