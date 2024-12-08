@@ -108,7 +108,7 @@ let isActive = (e) => {
   // Targeting Dropdown Input Field + Dropdown Menu
   let dropDownInput = document.querySelector(".dropdown");
   let dropDownMenu = document.querySelector(".dropdown-menu");
-  if (!e.target.contains(dropDownInput) || !e.target.contains(dropDownMenu)) {
+  if (!e.target.contains(dropDownMenu)) {
     dropDownInput.classList.toggle("is-active");
   } else {
     dropDownInput.classList.remove("is-active");
