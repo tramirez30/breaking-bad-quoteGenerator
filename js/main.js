@@ -113,12 +113,8 @@ let isActive = (e) => {
   }
   // If you click outside the dropdown component, the dropdown will close
 
-  if (!dropDownInput.contains(e.target)) {
-    dropDownInput.classList.remove("is-active");
-  }
-
   console.log("Target is:", e.target);
-  console.log(e.target.contains(dropDownInput));
+  console.log(dropDownInput.classList.contains("is-active"));
   console.log(e.target.contains(dropDownItem));
 };
 
