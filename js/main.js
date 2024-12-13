@@ -107,7 +107,6 @@ let clearQuote = () => {
 let isActive = (e) => {
   // Targeting Dropdown Input Field + Dropdown Menu
   // Add logic to open and close dropdown
-  // Reviewed NodeJS video
   let dropDownInput = document.querySelector(".dropdown");
   let dropDownItem = document.querySelector(".dropdown-item");
   if (!e.target.contains(dropDownInput)) {
