@@ -121,7 +121,7 @@ let isActive = (e) => {
 let closeDropdown = () => {
   let dropDown = document.querySelector(".dropdown");
   if (dropDown.classList.contains("is-active")) {
-    console.log("True");
+    dropDown.classList.remove("is-active");
   }
 };
 
