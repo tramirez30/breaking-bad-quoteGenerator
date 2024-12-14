@@ -107,17 +107,17 @@ let clearQuote = () => {
 let isActive = (e) => {
   // Targeting Dropdown Input Field + Dropdown Menu
   // Add logic to open and close dropdown
-  let dropDownInput = document.querySelector(".dropdown");
-  let dropDownItem = document.querySelector(".dropdown-item");
-  if (!e.target.contains(dropDownInput)) {
-    dropDownInput.classList.toggle("is-active");
-  }
+  // let dropDownInput = document.querySelector(".dropdown");
+  // let dropDownItem = document.querySelector(".dropdown-item");
+  // if (!e.target.contains(dropDownInput)) {
+  //   dropDownInput.classList.toggle("is-active");
+  // }
 
   // If you click outside the dropdown component, the dropdown will close
 
-  console.log("Target is:", e.target);
-  console.log(dropDownInput.classList.contains("is-active"));
-  console.log(e.target.contains(dropDownItem));
+  console.log("Target is:", e);
+  // console.log(dropDownInput.classList.contains("dropdown"));
+  // console.log(e.target.contains(dropDownItem));
 };
 
 // Event Listener, runs Quote() after click
