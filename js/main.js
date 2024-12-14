@@ -110,9 +110,10 @@ let isActive = (e) => {
 
   //Open dropdown if it contains dropdown class
   if (!e.target.classList.contains(dropDown)) {
+    closeDropdown();
     dropDown.classList.toggle("is-active");
   }
-  console.log(dropDownInput);
+  console.log(dropDown);
 };
 
 // Close dropdown
