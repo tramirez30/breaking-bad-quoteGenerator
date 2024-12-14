@@ -146,6 +146,7 @@ document.querySelector("#dropdown").addEventListener("click", isActive);
 
 let characters = [];
 
+// Loads list of authors to dropdown options
 let getAuthor = () => {
   fetch("https://api.breakingbadquotes.xyz/v1/quotes/100")
     .then((response) => response.json())
@@ -178,9 +179,6 @@ let selectAuthor = (arr) => {
 };
 
 getAuthor();
-
-// Unrelated: Promise Exercise Article:(TODO) IN PROGRESS
-// https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html
 
 // Reading assignment:
 // https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
