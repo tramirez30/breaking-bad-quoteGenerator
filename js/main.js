@@ -104,10 +104,10 @@ let clearQuote = () => {
 // Function - Close dropdown if user clicks anywhere on the screen
 // Function - Click on name and display tag with value
 
-let isActive = (e) => {
-  // Targets dropdown input
-  let dropDown = document.querySelector(".dropdown");
+// Targets dropdown input
+let dropDown = document.querySelector(".dropdown");
 
+let isActive = (e) => {
   //Check to see if dropdown was selected
   if (dropDown.contains(e.target)) {
     // Toggles dropdown
@@ -120,10 +120,7 @@ let isActive = (e) => {
 // Close dropdown function
 
 let closeDropdown = () => {
-  let dropDown = document.querySelector(".dropdown");
-  if (dropDown.classList.contains("is-active")) {
-    dropDown.classList.remove("is-active");
-  }
+  dropDown.classList.remove("is-active");
 };
 
 // Event Listener, runs Quote() after click
