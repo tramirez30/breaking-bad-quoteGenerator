@@ -108,15 +108,16 @@ let isActive = (e) => {
   // Targets dropdown input
   let dropDown = document.querySelector(".dropdown");
 
-  //Open dropdown if it contains dropdown class
-  if (!e.target.classList.contains(dropDown)) {
-    closeDropdown();
+  //Check to see if dropdown was selected
+  if (dropDown.contains(e.target)) {
+    // Toggles dropdown
     dropDown.classList.toggle("is-active");
+  } else {
+    closeDropdown();
   }
-  console.log(dropDown);
 };
 
-// Close dropdown
+// Close dropdown function
 
 let closeDropdown = () => {
   let dropDown = document.querySelector(".dropdown");
