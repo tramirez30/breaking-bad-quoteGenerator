@@ -106,13 +106,22 @@ let clearQuote = () => {
 
 let isActive = (e) => {
   // Targets dropdown input
-  let dropDownInput = document.querySelector(".dropdown");
+  let dropDown = document.querySelector(".dropdown");
 
   //Open dropdown if it contains dropdown class
-  if (!e.target.classList.contains(dropDownInput)) {
-    dropDownInput.classList.toggle("is-active");
+  if (!e.target.classList.contains(dropDown)) {
+    dropDown.classList.toggle("is-active");
   }
   console.log(dropDownInput);
+};
+
+// Close dropdown
+
+let closeDropdown = () => {
+  let dropDown = document.querySelector(".dropdown");
+  if (dropDown.classList.contains("is-active")) {
+    console.log("True");
+  }
 };
 
 // Event Listener, runs Quote() after click
