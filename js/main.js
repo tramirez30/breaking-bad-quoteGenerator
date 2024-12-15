@@ -130,7 +130,7 @@ document.querySelector("#getQuote-btn").addEventListener("click", quote);
 document.querySelector("#clear-btn").addEventListener("click", clearQuote);
 
 // Toggle dropdown state
-document.querySelector("#dropdown").addEventListener("click", isActive);
+Window.querySelector("#dropdown").addEventListener("click", isActive);
 
 // If there is no value in the input field, don't display card
 
