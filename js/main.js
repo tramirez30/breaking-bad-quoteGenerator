@@ -115,6 +115,9 @@ let isActive = (e) => {
     // Toggles dropdown
     dropDown.classList.toggle("is-active");
     icon.classList = "fas fa-angle-up";
+    if (option.contains(e.target)) {
+      icon.classList = "fas fa-angle-down";
+    }
   } else {
     closeDropdown();
   }
