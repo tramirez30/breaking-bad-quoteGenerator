@@ -113,13 +113,19 @@ let isActive = (e) => {
   //Check to see if dropdown was selected
   if (dropDown.contains(e.target)) {
     // Toggles dropdown
+    optionSelected();
     dropDown.classList.toggle("is-active");
     icon.classList = "fas fa-angle-up";
-    if (option.contains(e.target)) {
-      icon.classList = "fas fa-angle-down";
-    }
   } else {
     closeDropdown();
+  }
+};
+
+// Option function selected
+
+let optionSelected = (e) => {
+  if (option.contains(e.target)) {
+    icon.classList = "fas fa-angle-down";
   }
 };
 
