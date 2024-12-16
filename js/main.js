@@ -107,6 +107,7 @@ let clearQuote = () => {
 // Targets dropdown input
 let dropDown = document.querySelector(".dropdown");
 let icon = document.querySelector(".fas.fa-angle-down");
+let option = document.querySelector(".dropdown-item");
 
 let isActive = (e) => {
   //Check to see if dropdown was selected
