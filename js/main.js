@@ -106,12 +106,14 @@ let clearQuote = () => {
 
 // Targets dropdown input
 let dropDown = document.querySelector(".dropdown");
+let icon = document.querySelector(".fas.fa-angle-down");
 
 let isActive = (e) => {
   //Check to see if dropdown was selected
   if (dropDown.contains(e.target)) {
     // Toggles dropdown
     dropDown.classList.toggle("is-active");
+    icon.classList = "fas fa-angle-up";
   } else {
     closeDropdown();
   }
@@ -121,6 +123,7 @@ let isActive = (e) => {
 
 let closeDropdown = () => {
   dropDown.classList.remove("is-active");
+  icon.classList = "fas fa-angle-down";
 };
 
 // Event Listener, runs Quote() after click
