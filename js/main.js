@@ -114,6 +114,7 @@ let isActive = (e) => {
   if (dropDown.contains(e.target)) {
     // Toggles dropdown
 
+    // Update icon to switch from up to down and vice versa
     dropDown.classList.toggle("is-active");
     icon.classList = "fas fa-angle-up";
   } else {
