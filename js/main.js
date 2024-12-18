@@ -120,12 +120,14 @@ let isActive = (e) => {
   } else {
     closeDropdown();
   }
+  optionSelected();
 };
 
 // Option function selected
 
 let optionSelected = (e) => {
-  if (option) {
+  if (option.contains(e.target)) {
+    dropDown.classList.remove("is-active");
     icon.classList = "fas fa-angle-down";
   }
 };
@@ -135,7 +137,6 @@ let optionSelected = (e) => {
 let closeDropdown = () => {
   dropDown.classList.remove("is-active");
   icon.classList = "fas fa-angle-down";
-  optionSelected();
 };
 
 // Event Listener, runs Quote() after click
