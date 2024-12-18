@@ -111,12 +111,14 @@ let option = document.querySelector(".dropdown-item");
 
 let isActive = (e) => {
   //Check to see if dropdown was selected
+
   if (dropDown.contains(e.target)) {
     // Toggles dropdown
 
     // Update icon to switch from up to down and vice versa
     dropDown.classList.toggle("is-active");
     icon.classList = "fas fa-angle-up";
+    optionSelected(e);
   } else {
     closeDropdown();
   }
@@ -125,9 +127,8 @@ let isActive = (e) => {
 // Option function selected
 
 let optionSelected = (e) => {
-  if (e.target === option) {
-    dropDown.classList.remove("is-active");
-    icon.classList = "fas fa-angle-down";
+  if (e.target.classList.contains(option)) {
+    console.log("Clicked");
   }
 };
 
