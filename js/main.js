@@ -111,7 +111,6 @@ let option = document.querySelector(".dropdown-item");
 
 let isActive = (e) => {
   //Check to see if dropdown was selected
-
   if (dropDown.contains(e.target)) {
     // Toggles dropdown
 
@@ -127,7 +126,7 @@ let isActive = (e) => {
 // Option function selected
 
 let optionSelected = (e) => {
-  if (e.target.classList.contains(option)) {
+  if (option.contains(e.target)) {
     console.log("Clicked");
   }
 };
