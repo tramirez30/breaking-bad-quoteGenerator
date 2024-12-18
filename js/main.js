@@ -118,7 +118,6 @@ let isActive = (e) => {
     dropDown.classList.toggle("is-active");
     icon.classList = "fas fa-angle-up";
   } else {
-    optionSelected();
     closeDropdown();
   }
 };
@@ -126,7 +125,8 @@ let isActive = (e) => {
 // Option function selected
 
 let optionSelected = (e) => {
-  if (option) {
+  if (e.target === option) {
+    dropDown.classList.remove("is-active");
     icon.classList = "fas fa-angle-down";
   }
 };
