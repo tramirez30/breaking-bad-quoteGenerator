@@ -118,16 +118,15 @@ let isActive = (e) => {
     dropDown.classList.toggle("is-active");
     icon.classList = "fas fa-angle-up";
   } else {
+    optionSelected();
     closeDropdown();
   }
-  optionSelected();
 };
 
 // Option function selected
 
 let optionSelected = (e) => {
   if (option.contains(e.target)) {
-    dropDown.classList.remove("is-active");
     icon.classList = "fas fa-angle-down";
   }
 };
