@@ -126,7 +126,7 @@ let isActive = (e) => {
 // Option function selected
 
 let optionSelected = (e) => {
-  if (option.contains(e.target)) {
+  if (option) {
     icon.classList = "fas fa-angle-down";
   }
 };
