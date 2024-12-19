@@ -126,7 +126,8 @@ let isActive = (e) => {
 // Option function selected
 
 let optionSelected = (e) => {
-  if (option.contains(e.target)) {
+  // Checks to see if dropdown-item is clicked
+  if (e.target.classList.contains(option)) {
     console.log("Clicked");
   }
 };
