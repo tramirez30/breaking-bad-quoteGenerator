@@ -127,6 +127,7 @@ let isActive = (e) => {
 
 let optionSelected = (e) => {
   // Checks to see if dropdown-item is clicked
+  // Needs to be updated
   if (e.target.classList.contains(option)) {
     console.log("Clicked");
   }
