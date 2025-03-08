@@ -1,65 +1,3 @@
-//The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM
-// let btn = document.querySelector("button");
-// btn.addEventListener("click", getDrink);
-// function getDrink(drink) {
-//   let input = document.querySelector("input");
-//   console.log(input.value.includes(" "));
-//   if (input.value.includes(" ")) {
-//     drink = input.value.split(" ").join(" ");
-//     return drinkUrl(drink);
-//   } else {
-//     drink = input.value;
-//     return drinkUrl(drink);
-//   }
-// }
-
-// let btn = document.querySelector("button");
-// btn.addEventListener("click", getDrink);
-// function getDrink() {
-//   let drink = document.querySelector("input").value;
-//   console.log(drink.includes(" "));
-//   if (drink.includes(" ")) {
-//     drink.split(" ").join(" ");
-//     return drinkUrl(drink);
-//   } else {
-//     return drinkUrl(drink);
-//   }
-// }
-
-// let getDrink = () => {
-//   let drink = document.querySelector("input").value;
-//   console.log(drink.includes(" "));
-//   if (drink.includes(" ")) {
-//     drink.split(" ").join(" ");
-//     let cardClass = document.querySelector("#card");
-//     cardClass.classList.remove("no-card");
-//     document.querySelector("input").value = "";
-//     return drinkUrl(drink);
-//   } else {
-//     let cardClass = document.querySelector("#card");
-//     cardClass.classList.remove("no-card");
-//     document.querySelector("input").value = "";
-//     return drinkUrl(drink);
-//   }
-// };
-
-// let getQuote = (val) => {
-//   fetch(`https://api.breakingbadquotes.xyz/v1/quotes/5${val}`)
-//     .then((res) => res.json())
-//     .then((data) => {
-//       console.log(data)
-//     .catch((err) => {
-//       console.log(`Error: ${err}`);
-//     });
-// };
-
-// let title = document.querySelector("#title");
-// let subtitle = document.querySelector("#subtitle");
-
-// if (title.innerText === "" && subtitle.innerText === "") {
-//   document.querySelector(".card").classList.add("card-is-hidden");
-// }
-
 // Quote Function
 
 // Fetches Author + Quote
@@ -101,7 +39,6 @@ let clearQuote = () => {
 // TODO:
 // List dropdown in Alphabet order(11/20)
 // Flip arrow when dropdown is active(11/20)
-// Function - Close dropdown if user clicks anywhere on the screen
 // Function - Click on name and display tag with value
 
 // Targets dropdown input
