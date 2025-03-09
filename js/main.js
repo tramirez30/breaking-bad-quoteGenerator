@@ -1,5 +1,8 @@
 // Quote Function
 
+// Targets dropdown input
+let icon = document.querySelector(".fas.fa-angle-down");
+
 // Fetches Author + Quote
 // returns html + string template
 
@@ -41,35 +44,44 @@ let clearQuote = () => {
 // Flip arrow when dropdown is active(11/20)
 // Function - Click on name and display tag with value
 
-// Targets dropdown input
-let dropDown = document.querySelector(".dropdown");
-let icon = document.querySelector(".fas.fa-angle-down");
-let option = document.querySelector(".dropdown-item");
-
 let isActive = (e) => {
+  let dropDown = document.querySelector(".dropdown");
   //Check to see if dropdown was selected
   if (dropDown.contains(e.target)) {
-    // Toggles dropdown
-
-    // Update icon to switch from up to down and vice versa
+    // Toggles dropdown + Update icon to switch from up to down and vice versa
     dropDown.classList.toggle("is-active");
+    let options = document.querySelector(".dropdown-item");
+    if (options.contains(e.target)) {
+      console.log(options.text);
+      icon.classList = "fas fa-angle-down";
+    }
     icon.classList = "fas fa-angle-up";
-    optionSelected(e);
+    displayTag();
+  } else if (options) {
+    console.log("clicked");
   } else {
     closeDropdown();
   }
 };
 
-// Option function selected
-
-let optionSelected = (e) => {
-  // Checks to see if dropdown-item is clicked
-  // Needs to be updated
-  // Update 12/23: No update
-  if (e.target.classList.contains(option)) {
-    console.log("Clicked");
+let displayTag = () => {
+  if (dropdown.classList === "is-active" && options.contains(e.target)) {
+    console.log(e.target.value);
   }
 };
+
+// document.querySelector(".dropdown-item").addEventListener("click", displayTag);
+
+// Option function selected
+
+// let optionSelected = (e) => {
+//   // Checks to see if dropdown-item is clicked
+//   // Needs to be updated
+//   // Update 12/23: No update
+//   if (e.target.classList.contains(option)) {
+//     console.log("Clicked");
+//   }
+// };
 
 // Close dropdown function
 
@@ -78,26 +90,7 @@ let closeDropdown = () => {
   icon.classList = "fas fa-angle-down";
 };
 
-// Event Listener, runs Quote() after click
-document.querySelector("#getQuote-btn").addEventListener("click", quote);
-
-// Clears quote
-document.querySelector("#clear-btn").addEventListener("click", clearQuote);
-
-// Toggle dropdown state
-window.addEventListener("click", isActive);
-
 // If there is no value in the input field, don't display card
-
-/*
-<div class="card">
-  <div class="card-content">
-    <p id="title" class="title is-4 mb-4"></p>
-    <p id="subtitle" class="subtitle"></p>
-   </div>
-</div>
-
-*/
 
 // Storing data from API call into an array
 
@@ -142,6 +135,35 @@ let selectAuthor = (arr) => {
 };
 
 getAuthor();
+
+// Display tags
+
+/* 
+
+ <div class="tags">
+          <span class="tag is-medium">
+            Walter White
+            <button class="delete is-small"></button>
+          </span>
+          <span class="tag is-medium">
+            Saul Goodman
+            <button class="delete is-small"></button>
+          </span>
+          <span class="tag is-medium">
+            Gustavo Fring
+            <button class="delete is-small"></button>
+          </span>
+        </div>
+*/
+
+// Event Listener, runs Quote() after click
+document.querySelector("#getQuote-btn").addEventListener("click", quote);
+
+// Clears quote
+document.querySelector("#clear-btn").addEventListener("click", clearQuote);
+
+// Toggle dropdown state
+window.addEventListener("click", isActive);
 
 // Reading assignment:
 // https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
