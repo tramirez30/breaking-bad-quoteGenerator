@@ -52,22 +52,19 @@ let isActive = (e) => {
     dropDown.classList.toggle("is-active");
     let options = document.querySelector(".dropdown-item");
     if (options.contains(e.target)) {
-      console.log(options.text);
-      icon.classList = "fas fa-angle-down";
+      displayTag(options.text);
     }
     icon.classList = "fas fa-angle-up";
-    displayTag();
-  } else if (options) {
-    console.log("clicked");
   } else {
     closeDropdown();
   }
 };
 
-let displayTag = () => {
-  if (dropdown.classList === "is-active" && options.contains(e.target)) {
-    console.log(e.target.value);
-  }
+let displayTag = (val) => {
+  output += ` <div class="tags">
+                <span class="tag is-medium">${val}<button class="delete is-small"></button></span>
+              </div>
+        `;
 };
 
 // document.querySelector(".dropdown-item").addEventListener("click", displayTag);
@@ -135,26 +132,6 @@ let selectAuthor = (arr) => {
 };
 
 getAuthor();
-
-// Display tags
-
-/* 
-
- <div class="tags">
-          <span class="tag is-medium">
-            Walter White
-            <button class="delete is-small"></button>
-          </span>
-          <span class="tag is-medium">
-            Saul Goodman
-            <button class="delete is-small"></button>
-          </span>
-          <span class="tag is-medium">
-            Gustavo Fring
-            <button class="delete is-small"></button>
-          </span>
-        </div>
-*/
 
 // Event Listener, runs Quote() after click
 document.querySelector("#getQuote-btn").addEventListener("click", quote);
