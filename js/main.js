@@ -212,9 +212,9 @@ const toggleDropdown = (e) => {
 // Display Selected Author as Tag
 const displayTag = (author) => {
   let tag = document.createElement("div");
-  tag.classList.add("tags");
+  tag.classList.add("tags", "grid");
   tag.innerHTML = `
-    <span class="tag is-medium">${author}
+    <span class="tag is-medium cell">${author}
       <button class="delete is-small" onclick="removeTag(this)"></button>
     </span>
   `;
@@ -247,7 +247,7 @@ const fetchAuthors = async () => {
   }
 };
 
-// Populate Author Dropdown
+// Populate Author Dropdown, (A-Z)
 const populateDropdown = (authors) => {
   dropdownEl.innerHTML = authors
     .sort()
